@@ -22,9 +22,9 @@ import com.fintechhub.koin_mvvm.viewModel.DetailsView
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
-fun DetailsScreen(detailsViewModel: DetailsView = koinViewModel()) {
+fun DetailsScreen() {
+    val detailsViewModel: DetailsView = koinViewModel()
     val details = detailsViewModel.details.collectAsState()
-
     LazyColumn(
         content = {
             items(details.value) {
