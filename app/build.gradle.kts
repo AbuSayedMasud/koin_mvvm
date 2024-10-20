@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("plugin.serialization") version "1.9.20"
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -40,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion ="1.5.4"
     }
     packaging {
         resources {
@@ -48,7 +50,6 @@ android {
         }
     }
 }
-
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -70,7 +71,14 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Koin AndroidX ViewModel (for traditional ViewModels)
+    implementation("io.ktor:ktor-client-core:3.0.0")
+    implementation("io.ktor:ktor-client-cio:3.0.0")
+    implementation("io.ktor:ktor-client-content-negotiation:3.0.0")
+    implementation ("io.ktor:ktor-serialization-kotlinx-json:3.0.0")
 
+    // kotlinx serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+    implementation("io.ktor:ktor-client-logging:3.0.0")
     // Koin for Jetpack Compose
     implementation (libs.insert.koin.koin.androidx.compose)
     implementation(libs.kotlinx.coroutines.android)

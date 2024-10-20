@@ -16,14 +16,14 @@ class TweetRepositoryImp(private val tweetsyApi: TweetsyApi) {
         get() = _tweety
     suspend fun getCategories() {
         val response = tweetsyApi.getCategories()
-        if (response.body() != null && response.isSuccessful) {
-            _categories.emit(response.body()!!)
+        if (response!= null) {
+            _categories.emit(response!!)
         }
     }
     suspend fun getTweets(category: String) {
         val response = tweetsyApi.getTweetsy("tweets[?(@.category==\"$category\")]")
-        if (response.body() != null && response.isSuccessful) {
-            _tweety.emit(response.body()!!)
+        if (response!= null) {
+            _tweety.emit(response!!)
         }
     }
 }

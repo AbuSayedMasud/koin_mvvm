@@ -7,7 +7,7 @@ hiltNavigationCompose = "1.2.0"
 koinAndroid = "3.5.6"
 koinAndroidxCompose = "3.5.0"
 koinAndroidxViewmodelVersion = "3.5.0"
-kotlin = "1.9.0"
+kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -56,4 +56,4 @@ androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navig
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 deggar-hilt_google-kotlin-android = { id = "com.google.dagger.hilt.android", version= "2.52" }
-
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
