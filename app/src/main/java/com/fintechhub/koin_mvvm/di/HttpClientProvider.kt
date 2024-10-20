@@ -1,4 +1,4 @@
-package com.fintechhub.koin_mvvm
+package com.fintechhub.koin_mvvm.di
 
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO

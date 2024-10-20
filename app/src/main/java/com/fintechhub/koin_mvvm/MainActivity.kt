@@ -13,6 +13,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.fintechhub.koin_mvvm.screen.CategoryScreen
+import com.fintechhub.koin_mvvm.screen.DetailsScreen
 import com.fintechhub.koin_mvvm.ui.theme.Koin_mvvmTheme
 
 class MainActivity : ComponentActivity() {

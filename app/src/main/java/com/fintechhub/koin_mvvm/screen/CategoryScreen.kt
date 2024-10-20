@@ -1,4 +1,4 @@
-package com.fintechhub.koin_mvvm
+package com.fintechhub.koin_mvvm.screen
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -23,8 +23,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.fintechhub.koin_mvvm.R
 import com.fintechhub.koin_mvvm.viewModel.CategoryViewModel
 import org.koin.androidx.compose.koinViewModel
 
